@@ -1,0 +1,303 @@
+
+
+// 背景
+.not-bg {
+    background-color: transparent!important;
+}
+.bg-yellow {
+    background-color: @yellow!important;
+}
+.bg-light-blue {
+    background-color: lighten(@blue, 15%)!important;
+}
+.bg-blue {
+    background-color: @blue!important;
+}
+.bg-deep-blue {
+    background-color: darken(@blue, 20%)!important;
+}
+.bg-light-orange {
+    background-color: lighten(@orange, 5%)!important;
+}
+.bg-orange {
+    background-color: @orange!important;
+}
+.bg-deep-orange {
+    background-color: darken(@orange, 20%)!important;
+}
+.bg-green {
+    background-color: @green!important;
+}
+.bg-deep-green {
+    background-color: green!important;
+}
+.bg-purple {
+    background-color: @purple!important;
+}
+.bg-red {
+    background-color: @red!important;
+}
+.bg-pink {
+    background-color: lighten(@red, 10%)!important;
+}
+.bg-white {
+    background-color: @white!important;
+}
+.bg-light {
+    background-color: @bg-light!important;
+}
+.bg-gray {
+    background-color: #f5f7fa!important;
+}
+.bg-active {
+    background-color: #cee4fd!important;
+}
+
+// 文字颜色
+.font-primary {
+    color: #2D2F33;
+}
+.font-normal {
+    color:#5e6d82
+}
+.font-sub {
+    color:#878D99
+}
+.font-transparent {
+    color: transparent;
+}
+.font-default {
+    color: @defaultFont;
+}
+.font-disabled {
+    color: #ddd;
+}
+.font-gray {
+    color: @grayFont;
+}
+.font-light-gray {
+    color: @deepBorder;
+}
+.font-blue {
+    color: @blue;
+}
+.font-blue-light {
+    color: @blue-light;
+}
+.font-orange {
+    color: @orange;
+}
+.font-green {
+    color: @green;
+}
+.font-deep-green {
+    color: darken(@green, 5%);
+}
+.font-red {
+    color: @red;
+}
+.font-yellow {
+    color: @yellow;
+}
+.font-purple {
+    color: @purple;
+}
+.font-white {
+    color: @white;
+}
+.font-border {
+    color: @deepBorder;
+}
+.font-blue-green {
+  color: @blueGreen;
+}
+.font-deep-pink {
+  color: @deepPink;
+}
+.link {
+    color: @blue;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// 字体大小
+.x-small {
+    font-size: 12px;
+}
+.small {
+    font-size: 13px;
+}
+.normal {
+    font-size: 14px;
+}
+.big {
+    font-size: 16px;
+}
+.x-big {
+    font-size: 18px;
+}
+.xx-big {
+    font-size: 20px;
+}
+.max-big {
+    font-size: 22px;
+}
+
+// 文字粗体
+.bold {
+    font-weight: bold;
+}
+
+// 布局
+.between {
+    .flexBetween();
+}
+.center {
+    .center();
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right !important;
+}
+.clear {
+    overflow: hidden;
+}
+.hidden {
+    display: none !important;
+}
+
+// 文本对其
+.tc {
+    text-align: center;
+}
+.tl {
+    text-align: left !important;
+}
+.tr {
+    text-align: right;
+}
+.middle {
+    vertical-align: middle;
+}
+
+// 边框
+.bl {
+    .borderLeft();
+}
+.bt {
+    .borderTop();
+}
+.br {
+    .borderRight();
+}
+.bb {
+    .borderBottom();
+}
+
+// 间距
+.ms {
+    margin: @space;
+}
+.ms2 {
+    margin: @space * 2;
+}
+.ml {
+    margin-left: @space;
+}
+.mr {
+    margin-right: @space;
+}
+.mt {
+    margin-top: @space;
+}
+.mb {
+    margin-bottom: @space;
+}
+.ps {
+    padding: @space;
+}
+.pl {
+    padding-left: @space;
+}
+.pt {
+    padding-top: @space;
+}
+.pr {
+    padding-right: @space;
+}
+.pb {
+    padding-bottom: @space;
+}
+.pl6 {
+  padding-left: @space * 6;
+}
+
+// 交互
+.cursor {
+    cursor: pointer;
+}
+
+// 撑满宽度
+.w100 {
+    width: @size;
+}
+.w400 {
+  width: @size * 4;
+}
+.w150 {
+  width: @size * 1.5;
+  .el-date-editor.el-input {
+    width: 100%;
+  }
+}
+.wp80 {
+  width: 80% !important;
+}
+.wp20 {
+  width: 20% !important;
+}
+.wp100 {
+    width: 100% !important;
+}
+.h100 {
+  height: 100%;
+}
+.scroll-pnl {
+    max-height: @size * 4;
+    overflow: auto;
+}
+
+// 头像
+.avatar {
+    width: @size * .32;
+    height: @size * .32;
+    line-height: @size * .32;
+    .border(@white);
+    border-width: 2px;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    background: #ccc;
+    white-space: nowrap;
+    .radius(16px);
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    &.avatar-large {
+      width: @size * .4;
+      height: @size * .4;
+      line-height: @size * .4;
+      .radius(20px);
+    }
+    &.avatar-small {
+      width: @size * .24;
+      height: @size * .24;
+      line-height: @size * .24;
+      .radius(12px);
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "class-pc-nuxt",
+  "version": "1.0.0",
+  "description": "zc-ckj class-pc-nuxt",
+  "author": "@wyp",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "axios": "^0.17.1",
+    "babel-polyfill": "^6.26.0",
+    "element-ui": "^2.4.1",
+    "normalize.css": "^7.0.0",
+    "nuxt": "^1.0.0",
+    "region-picker": "^0.0.17",
+    "vue": "^2.5.13",
+    "vue-echarts": "^3.0.1",
+    "vue-router": "^3.0.1",
+    "vuedraggable": "^2.16.0",
+    "lru-cache": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0"
+  }
+}
