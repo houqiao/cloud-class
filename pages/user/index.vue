@@ -29,6 +29,7 @@
         <el-tab-pane label="收藏课程" name="tab5">定时任务补偿</el-tab-pane>
         <el-tab-pane label="加入小组" name="tab6">定时任务补偿</el-tab-pane>
         <el-tab-pane label="关注 / 粉丝" name="tab7">定时任务补偿</el-tab-pane>
+        <el-tab-pane label="关注 / 粉丝" name="tab7">冲</el-tab-pane>
       </el-tabs>
     </div>
   </section>
